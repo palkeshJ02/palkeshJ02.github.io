@@ -1,235 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palkesh Jain | Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --bg-color: #f8f9fa;
-            --text-color: #333;
-            --card-bg: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* Header Section */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-            border-bottom: 5px solid var(--accent-color);
-        }
-
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            margin-bottom: 1.5rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header h2 {
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: #bdc3c7;
-            margin-bottom: 0.25rem;
-        }
-        
-        header h3 {
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: #95a5a6;
-        }
-
-        /* Main Content Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        h2.section-title {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-            display: inline-block;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Lists for Projects & Skills */
-        .project-list, .skills-list {
-            list-style: none;
-        }
-
-        .project-list li {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .project-list li:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .skill-tag {
-            background-color: #e8f4f8;
-            color: var(--accent-color);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        /* Footer / Contact */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        footer a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: white;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .container {
-                padding: 1rem;
-            }
-            section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <title>Palkesh Jain</title>
 </head>
 <body>
 
-    <header>
-        <img src="palkesh.jpeg" alt="Palkesh Jain" class="profile-img">
-        <h1>Palkesh Jain</h1>
-        <h2>Doctoral Researcher, Computer Science & Engineering</h2>
-        <h3>Indian Institute of Technology Hyderabad</h3>
-    </header>
+    <h1>Palkesh Jain</h1>
 
-    <div class="container">
-        
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>I am a doctoral researcher in the Department of Computer Science and Engineering at the Indian Institute of Technology (IIT) Hyderabad. I previously graduated from the Indian Institute of Technology (IIT) Bhilai with the class of 2025.</p>
-            <p>My academic and research pursuits are deeply rooted in advanced cryptography. I specialize in lattice-based and post-quantum cryptography, exploring the concrete security of modern algorithms. My work also extends into zero-knowledge proof systems, side-channel cryptanalysis, and the architectural design of secure, privacy-preserving protocols.</p>
-        </section>
+    <p>Doing Nothing useless in life</p>
 
-        <section id="research">
-            <h2 class="section-title">Research & Projects</h2>
-            <ul class="project-list">
-                <li>
-                    <div class="project-title">Post-Quantum Cryptography & ML-KEM/ML-DSA Analysis</div>
-                    <p>Conducting comprehensive research on the concrete security and parameter bounds of CRYSTALS-Kyber and CRYSTALS-Dilithium. Developed a standalone Python GUI tool utilizing CustomTkinter to estimate classical and quantum security levels, failure probabilities, and BKZ block sizes for post-quantum algorithms.</p>
-                </li>
-                <li>
-                    <div class="project-title">Cyclone: Shielded UTXO Privacy Pool</div>
-                    <p>Designed and implemented an auditable, traceable version of a shielded privacy pool (inspired by Tornado Cash/Tornado Nova). The project utilizes Circom circuits, Solidity smart contracts, and an in-browser proving client using SnarkJS and Ethers.js.</p>
-                </li>
-                <li>
-                    <div class="project-title">Post-Quantum Central Bank Digital Currency (CBDC)</div>
-                    <p>Developed a CBDC protocol architecture featuring anonymous credentials, blind signatures, and verifiable encryption for offline peer-to-peer payments. Implemented using C++, the pqzk-blns framework, and Flask for entity web interfaces.</p>
-                </li>
-                <li>
-                    <div class="project-title">Zero-Knowledge Proofs & Quantum Networking</div>
-                    <p>Extensive exploration of zk-SNARKs (Groth16), BBS signatures, and KZG commitments. Additionally simulated entanglement-based quantum networking schemes (BB84, E91) and quantum blind signature protocols using Python.</p>
-                </li>
-            </ul>
-        </section>
+    <h2>About Me</h2>
+    <p>
+        I am a full time eat-sleep-repeat specialist.
+    </p>
 
-        <section id="skills">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Solidity</span>
-                <span class="skill-tag">Circom</span>
-                <span class="skill-tag">Bash Scripting</span>
-                <span class="skill-tag">Unix/Linux</span>
-                <span class="skill-tag">Cryptography (PQC, ZKP)</span>
-                <span class="skill-tag">Algorithm Analysis</span>
-            </div>
-        </section>
+    <h2>Research</h2>
+    <ul>
+        <li>Longest healthy sleep threshold</li>
+        <li>BMI based food amount calculator</li>
+        <li>Zero-knowledge of where food went</li>
+        <li>BMI based framework on how much a fat boy can eat compared to African kids. </li>
+        <li>Zero-knowledge of why I am. </li>
+    </ul>
 
-    </div>
-
-    <footer>
-        <p>Get in touch:</p>
-        <div style="margin-top: 1rem;">
-            <!-- Update these links with your actual URLs/email -->
-            <a href="mailto:your.email@example.com">Email</a> | 
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-        </div>
-        <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #95a5a6;">&copy; 2026 Palkesh Jain. All rights reserved.</p>
-    </footer>
+    <h2>Publications</h2>
+    <p>You will get them when you will get food. </p>
+    <p>Not any for now, last one got raided. Our firm had no knowledge that someone was printing fake currency there. Not me for sure. </p>
 
 </body>
 </html>
